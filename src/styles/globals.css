@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-ink-900;
+  }
+}
+
+@layer components {
+  .gold-line {
+    @apply h-px w-6 bg-gradient-to-r from-transparent via-gold-400 to-transparent;
+  }
+
+  .hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 25px 60px -20px rgba(0, 0, 0, 0.35);
+    }
+  }
+}
