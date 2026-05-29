@@ -18,6 +18,32 @@
  */
 
 // ============================================
+// 0️⃣ साइट कॉन्फ़िगरेशन (SITE CONFIGURATION)
+// ============================================
+export const SITE_CONFIG = {
+  // साइट का URL
+  url: 'https://dreamhouseinterior.com',
+  
+  // Favicon आइकन पाथ
+  favicon: '/favicon.ico',
+  
+  // Apple Touch Icon (iOS devices के लिए)
+  appleIcon: '/apple-touch-icon.png',
+  
+  // Open Graph Image (सोशल शेयरिंग के लिए)
+  ogImage: '/images/hero/hero.jpg',
+  
+  // थीम कलर (browser address bar के लिए)
+  themeColor: '#0a0a0a',
+  
+  // Default Language
+  language: 'en',
+  
+  // Country Code
+  country: 'IN',
+};
+
+// ============================================
 // 1️⃣ कंपनी की जानकारी (COMPANY INFORMATION)
 // ============================================
 export const COMPANY = {
