@@ -12,7 +12,7 @@ export default function WhatsAppButton() {
   }, []);
 
   // 📌 REPLACE: phone number in international format (no +, no spaces)
-  const phone = '919250234507';
+  const phone = '9250234507';
   const message = encodeURIComponent(
     "Hello, I'm interested in your interior design services. Please Contact me."
   );
