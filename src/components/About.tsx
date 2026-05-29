@@ -25,7 +25,7 @@ export default function About() {
             />
           </div>
           <div className="absolute -bottom-6 -right-6 hidden rounded-2xl border border-gold-400/30 bg-white p-6 shadow-luxe md:block">
-            <div className="font-serif text-4xl text-ink-950">15<span className="text-gold-500">+</span></div>
+            <div className="font-serif text-4xl text-ink-950">10<span className="text-gold-500">+</span></div>
             <div className="text-xs uppercase tracking-luxe text-ink-900/60">Years of Craft</div>
           </div>
         </motion.div>
@@ -51,9 +51,9 @@ export default function About() {
 
           <div className="mt-10 grid grid-cols-3 gap-6 border-t border-beige-200 pt-8">
             {[
-              { n: '500+', l: 'Projects' },
+              { n: '50+', l: 'Projects' },
               { n: '98%', l: 'Repeat Clients' },
-              { n: '40+', l: 'Awards' },
+              { n: '20+', l: 'Awards' },
             ].map((s) => (
               <div key={s.l}>
                 <div className="font-serif text-3xl text-ink-950">{s.n}</div>

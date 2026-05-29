@@ -2,6 +2,7 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { ArrowRight, Play } from 'lucide-react';
 import { useRef } from 'react';
+import { HERO } from '@/config/details';
 
 export default function Hero() {
   const ref = useRef<HTMLElement>(null);
@@ -35,7 +36,7 @@ export default function Hero() {
           transition={{ delay: 2.0, duration: 0.8 }}
           className="mb-6 flex items-center gap-3 text-xs uppercase tracking-luxe text-gold-400"
         >
-          <span className="gold-line" /> Luxury Interior Studio
+          <span className="gold-line" /> {HERO.label}
         </motion.span>
 
         <motion.h1
@@ -43,9 +44,8 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 2.2, duration: 1, ease: 'easeOut' }}
           className="max-w-4xl font-serif text-5xl font-light leading-[1.05] text-white text-balance md:text-7xl lg:text-8xl"
-        >
-          Crafting Spaces <em className="text-gold-400 not-italic">Beyond</em> Imagination
-        </motion.h1>
+          dangerouslySetInnerHTML={{ __html: HERO.title }}
+        />
 
         <motion.p
           initial={{ opacity: 0, y: 30 }}
@@ -53,7 +53,7 @@ export default function Hero() {
           transition={{ delay: 2.5, duration: 0.8 }}
           className="mt-8 max-w-xl text-lg text-beige-100/80"
         >
-          Where timeless elegance meets contemporary craftsmanship. We design homes that whisper sophistication and roar individuality.
+          {HERO.description}
         </motion.p>
 
         <motion.div
@@ -66,7 +66,7 @@ export default function Hero() {
             href="#contact"
             className="group inline-flex items-center gap-3 rounded-full bg-gold-400 px-8 py-4 text-sm font-medium uppercase tracking-luxe text-ink-950 transition-all duration-300 hover:bg-gold-500 hover:shadow-gold"
           >
-            Get Free Consultation
+            {HERO.ctaButton}
             <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
           </a>
           <a

@@ -23,21 +23,21 @@ export default function Instagram() {
           <h2 className="mt-4 font-serif text-4xl font-light md:text-5xl">
             On <em className="text-gold-500 not-italic">Instagram</em>
           </h2>
-          <a
+          {/* <a
             href="https://instagram.com/official.rahulk024"
             target="_blank"
             rel="noreferrer"
             className="mt-4 inline-flex items-center gap-2 text-sm uppercase tracking-luxe text-ink-900 underline-offset-4 hover:text-gold-500 hover:underline"
           >
             <Heart size={16} /> @official.rahulk024
-          </a>
+          </a> */}
         </div>
 
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
           {posts.map((src, i) => (
             <motion.a
               key={i}
-              href="https://www.instagram.com/official.rahulk024"
+              // href="https://www.instagram.com/official.rahulk024"
               target="_blank"
               rel="noreferrer"
               initial={{ opacity: 0, scale: 0.9 }}

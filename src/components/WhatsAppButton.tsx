@@ -14,7 +14,7 @@ export default function WhatsAppButton() {
   // 📌 REPLACE: phone number in international format (no +, no spaces)
   const phone = '919250234507';
   const message = encodeURIComponent(
-    "Hello, I'm interested in your interior design services. Please share details."
+    "Hello, I'm interested in your interior design services. Please Contact me."
   );
   const href = `https://wa.me/${phone}?text=${message}`;
 

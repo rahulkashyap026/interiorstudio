@@ -1,18 +1,18 @@
 import type { Metadata } from 'next';
 import { Playfair_Display, Inter } from 'next/font/google';
+import { PAGE_TITLES } from '@/config/details';
 import './globals.css';
 
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfair', display: 'swap' });
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'swap' });
 
 export const metadata: Metadata = {
-  title: 'Interior studio — Luxury Interior Design | Crafting Spaces Beyond Imagination',
-  description:
-    'Award-winning luxury interior design studio. Bespoke modular kitchens, living rooms, bedrooms, and full home interiors crafted with timeless elegance.',
+  title: PAGE_TITLES.home.title,
+  description: PAGE_TITLES.home.description,
   keywords: ['luxury interior design', 'modular kitchen', 'home interior', 'bedroom design', 'living room', 'office interior'],
   openGraph: {
-    title: 'Interior studio — Crafting Spaces Beyond Imagination',
-    description: 'Bespoke luxury interiors that redefine elegance.',
+    title: PAGE_TITLES.home.title,
+    description: PAGE_TITLES.home.description,
     type: 'website',
     locale: 'en_IN',
   },

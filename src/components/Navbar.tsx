@@ -2,14 +2,9 @@
 import { useEffect, useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { COMPANY, NAVIGATION } from '@/config/details';
 
-const links = [
-  { label: 'Home', href: '#home' },
-  { label: 'Services', href: '#services' },
-  { label: 'Gallery', href: '#gallery' },
-  { label: 'About', href: '#about' },
-  { label: 'Contact', href: '#contact' },
-];
+const links = NAVIGATION;
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -28,8 +23,8 @@ export default function Navbar() {
       }`}
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
-        <a href="#home" className="font-serif text-xl tracking-luxe text-white">
-          INTERIOR <span className="text-gold-400 font-bold">STUDIO</span>
+        <a href="#home" className="font-serif text-xl tracking-luxe text-white uppercase">
+          {COMPANY.name}
         </a>
 
         <ul className="hidden items-center gap-10 lg:flex">

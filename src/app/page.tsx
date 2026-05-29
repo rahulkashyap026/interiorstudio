@@ -1,7 +1,6 @@
 import Loader from '@/components/Loader';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
-import ServicesScroll from '@/components/ServicesScroll';
 import ServicesGrid from '@/components/ServicesGrid';
 import Gallery from '@/components/Gallery';
 import About from '@/components/About';
@@ -20,7 +19,6 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <ServicesScroll />
         <ServicesGrid />
         <Gallery />
         <About />

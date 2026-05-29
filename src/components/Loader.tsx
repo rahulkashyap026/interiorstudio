@@ -26,7 +26,7 @@ export default function Loader() {
               className="relative"
             >
               <div className="font-serif text-4xl text-bold tracking-luxe text-beige-100 md:text-6xl">
-                INTERIOR STUDIO
+                DREAM HOUSE
               </div>
               <motion.div
                 initial={{ width: 0 }}

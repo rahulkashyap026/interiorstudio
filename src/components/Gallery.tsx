@@ -16,6 +16,8 @@ const gallery = [
   { id: 10, src: '/images/gallery/full-home/home-2.jpg', category: 'Full Home', title: 'Villa Interior' },
   { id: 11, src: '/images/gallery/kitchen/kitchen-3.jpg', category: 'Kitchen', title: 'L-Shape Kitchen' },
   { id: 12, src: '/images/gallery/bedroom/bedroom-3.jpg', category: 'Bedroom', title: 'Kids Bedroom' },
+  { id: 13, src: '/images/gallery/living/living-3.jpeg', category: 'Living Room', title: 'Family Room' },
+
 ];
 
 const categories = ['All', 'Kitchen', 'Bedroom', 'Living Room', 'Office', 'Full Home'];
@@ -99,7 +101,7 @@ export default function Gallery() {
         </div>
 
         <p className="mt-8 text-center text-xs uppercase tracking-luxe text-beige-100/40">
-          [ Upload High Quality Images Here → /public/gallery/ ]
+          
         </p>
       </div>
     </section>

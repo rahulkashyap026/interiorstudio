@@ -2,6 +2,7 @@
 import { motion } from 'framer-motion';
 import { MapPin, Phone, Mail, Send } from 'lucide-react';
 import { useState } from 'react';
+import { COMPANY, CONTACT } from '@/config/details';
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
@@ -16,8 +17,8 @@ export default function Contact() {
     const email = formData.get('email')?.toString().trim() ?? '';
     const message = formData.get('message')?.toString().trim() ?? '';
 
-    const whatsappNumber = '91 9250234507'; // replace with your WhatsApp number in international format
-    const text = `*New Inquiry from Interior studio*\n\n*Name:* ${name}\n*Phone:* ${phone}\n*Email:* ${email}\n*Message:* ${message}`;
+    const whatsappNumber = `91${CONTACT.whatsapp}`;
+    const text = `*New Inquiry from ${COMPANY.name}*\n\n*Name:* ${name}\n*Phone:* ${phone}\n*Email:* ${email}\n*Message:* ${message}`;
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
 
     try {
@@ -52,9 +53,9 @@ export default function Contact() {
 
           <ul className="mt-10 space-y-6">
             {[
-              { icon: Phone, label: '+91 9250234507', href: 'tel:+91 9250234507' },
-              { icon: Mail, label: 'hello@interiorstudio.com', href: 'mailto:hello@interiorstudio.com' },
-              { icon: MapPin, label: 'Kanpur , Lucknow ', href: '#' },
+              { icon: Phone, label: CONTACT.phone, href: `tel:${CONTACT.phone}` },
+              { icon: Mail, label: CONTACT.email, href: `mailto:${CONTACT.email}` },
+              { icon: MapPin, label: CONTACT.location, href: '#' },
             ].map((c) => (
               <li key={c.label}>
                 <a href={c.href} className="group flex items-center gap-4 text-beige-100/80 transition hover:text-gold-400">
