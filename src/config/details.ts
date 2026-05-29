@@ -80,7 +80,7 @@ export const CONTACT = {
   location: 'Kanpur, Lucknow',
   
   // WhatsApp नंबर (बिना +91 के)
-  whatsapp: '919250234507',
+  whatsapp: '9250234507',
 };
 
 // ============================================
