@@ -390,7 +390,7 @@ export const SOCIAL_MEDIA = {
   pinterest: 'https://pinterest.com/interiorstudio',
   
   // WhatsApp (सिर्फ नंबर)
-  whatsapp: '919250234507',
+  whatsapp: '9250234507',
 };
 
 // ============================================
